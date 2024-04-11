@@ -85,3 +85,38 @@ hr {
   height: 400px;
   margin-left: 5rem;
 }
+/* --------------------------------------- */
+.service {
+  background: var(--clr-one);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 8rem;
+  text-align: center;
+  gap: 1rem;
+}
+.service .service__first,
+.service .service__second,
+.service .service__third,
+.service .service__fourth {
+  border: 2px solid var(--clr-font);
+}
+.service .service__first i,
+.service .service__second i,
+.service .service__third i,
+.service .service__fourth i {
+  font-size: 3em;
+  padding: 2rem 0;
+  color: var(--clr-font);
+}
+.service .service__first h2,
+.service .service__second h2,
+.service .service__third h2,
+.service .service__fourth h2 {
+  font-size: 2em;
+}
+.service .service__first p,
+.service .service__second p,
+.service .service__third p,
+.service .service__fourth p {
+  padding: 1rem 0;
+}
