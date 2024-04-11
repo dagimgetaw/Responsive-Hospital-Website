@@ -4,6 +4,7 @@
   --clr-one: #f6f5f5;
   --clr-two: #e1f0da;
   --clr-font: #1b9c85;
+  --clr-text: #677483;
 }
 * {
   padding: 0;
@@ -62,6 +63,7 @@ hr {
   color: var(--clr-font);
   font-size: 2.2em;
 }
+
 .home .home__first button {
   padding: 0.6rem 1.9rem;
   border: 3px solid var(--clr-font);
@@ -77,9 +79,7 @@ hr {
 .home .home__first button:hover {
   background: var(--clr-font);
 }
-.home .home__first button a:hover {
-  color: var(--clr-one);
-}
+
 .home .home__second img {
   width: 400px;
   height: 400px;
@@ -119,4 +119,69 @@ hr {
 .service .service__third p,
 .service .service__fourth p {
   padding: 1rem 0;
+}
+/* ------------------------------------- */
+.about__page {
+  background: var(--clr-two);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8rem;
+  text-align: left;
+  gap: 1rem;
+}
+.about__page .about__one,
+.about__page .about__two,
+.about__page .about__three,
+.about__page .about__four,
+.about__page .about__five,
+.about__page .about__six {
+  border: 2px solid var(--clr-font);
+  padding-left: 2rem;
+}
+.about__page .about__one i,
+.about__page .about__two i,
+.about__page .about__three i,
+.about__page .about__four i,
+.about__page .about__five i,
+.about__page .about__six i {
+  color: var(--clr-font);
+  font-size: 3em;
+  padding: 2rem 2rem 1rem 2rem;
+}
+.about__page .about__one h2,
+.about__page .about__two h2,
+.about__page .about__three h2,
+.about__page .about__four h2,
+.about__page .about__five h2,
+.about__page .about__six h2 {
+  padding-bottom: 1rem;
+}
+.about__page .about__one p,
+.about__page .about__two p,
+.about__page .about__three p,
+.about__page .about__four p,
+.about__page .about__five p,
+.about__page .about__six p {
+  color: var(--clr-text);
+}
+.about__page .about__one button,
+.about__page .about__two button,
+.about__page .about__three button,
+.about__page .about__four button,
+.about__page .about__five button,
+.about__page .about__six button {
+  padding: 0.6rem 1.9rem;
+  border: 3px solid var(--clr-font);
+  border-radius: 0.5rem;
+  background: var(--clr-font);
+  margin: 1rem 0;
+}
+.about__page .about__one button a,
+.about__page .about__two button a,
+.about__page .about__three button a,
+.about__page .about__four button a,
+.about__page .about__five button a,
+.about__page .about__six button a {
+  color: var(--clr-one);
+  text-decoration: none;
 }
