@@ -42,11 +42,46 @@ ul li a {
   color: var(--clr-font);
   text-decoration: none;
 }
-ul li a:hover {
-  text-decoration: underline;
-  transition: all 300ms ease;
-}
 hr {
   color: var(--clr-font);
   height: 6.4rem;
+  background: var(--clr-one);
+}
+/* -------------------------------------- */
+.home {
+  background: var(--clr-two);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 8rem;
+}
+.home .home__first {
+  padding-top: 4rem;
+}
+.home .home__first h2 {
+  padding: 3rem 0 2rem 0;
+  color: var(--clr-font);
+  font-size: 2.2em;
+}
+.home .home__first button {
+  padding: 0.6rem 1.9rem;
+  border: 3px solid var(--clr-font);
+  border-radius: 0.5rem;
+  background: transparent;
+  margin: 2rem 0;
+}
+.home .home__first button a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+}
+.home .home__first button:hover {
+  background: var(--clr-font);
+}
+.home .home__first button a:hover {
+  color: var(--clr-one);
+}
+.home .home__second img {
+  width: 400px;
+  height: 400px;
+  margin-left: 5rem;
 }
