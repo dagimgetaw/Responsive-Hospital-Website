@@ -17,6 +17,9 @@ body {
 button {
   cursor: pointer;
 }
+i {
+  cursor: pointer;
+}
 /* .container {
   margin: 2rem 4rem;
 } */
@@ -102,6 +105,7 @@ hr {
 .service .service__third,
 .service .service__fourth {
   border: 2px solid var(--clr-font);
+  border-radius: 0.3rem;
 }
 .service .service__first i,
 .service .service__second i,
@@ -140,6 +144,7 @@ hr {
 .about__page .about__six {
   border: 2px solid var(--clr-font);
   padding-left: 2rem;
+  border-radius: 0.3rem;
 }
 .about__page .about__one i,
 .about__page .about__two i,
@@ -227,4 +232,70 @@ hr {
 .about .about__second button a {
   color: var(--clr-one);
   text-decoration: none;
+}
+/* ------------------------------------- */
+.doctor {
+  background: var(--clr-two);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 8rem;
+  text-align: center;
+  gap: 1rem;
+}
+.doctor__title h2 {
+  background: var(--clr-two);
+  text-align: center;
+  font-size: 3em;
+  padding: 1rem 0 6rem 0;
+}
+.doctor__title h2 span {
+  color: var(--clr-font);
+}
+.doctor .doctor__one,
+.doctor .doctor__two,
+.doctor .doctor__three,
+.doctor .doctor__four,
+.doctor .doctor__five,
+.doctor .doctor__six {
+  border: 2px solid var(--clr-font);
+  border-radius: 0.3rem;
+}
+.doctor .doctor__one img,
+.doctor .doctor__two img,
+.doctor .doctor__three img,
+.doctor .doctor__four img,
+.doctor .doctor__five img,
+.doctor .doctor__six img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--clr-font);
+  margin: 2rem auto;
+  border-radius: 0.3rem;
+}
+.doctor .doctor__one h2,
+.doctor .doctor__two h2,
+.doctor .doctor__three h2,
+.doctor .doctor__four h2,
+.doctor .doctor__five h2,
+.doctor .doctor__six h2 {
+  color: var(--clr-font);
+}
+.doctor .doctor__one p,
+.doctor .doctor__two p,
+.doctor .doctor__three p,
+.doctor .doctor__four p,
+.doctor .doctor__five p,
+.doctor .doctor__six p {
+  color: var(--clr-text);
+}
+.media__icon {
+  text-align: center;
+  font-size: 1.6em;
+  padding: 1rem;
+  color: var(--clr-font);
+}
+.media__icon i {
+  padding: 0.6rem;
+  border: 2px solid var(--clr-font);
+  border-radius: 0.3rem;
 }
