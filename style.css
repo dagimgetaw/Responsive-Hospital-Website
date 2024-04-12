@@ -364,3 +364,147 @@ footer p {
   text-align: center;
   background: var(--clr-two);
 }
+/* ----------------------------------------------- */
+#menu__btn {
+  color: var(--clr-font);
+  font-size: 1.7em;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 830px) {
+  body {
+    overflow-x: hidden;
+  }
+  #menu__btn {
+    display: initial;
+  }
+  .nav__bar .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0rem;
+    border-radius: 0.5rem;
+    width: 30rem;
+    background: var(--clr-one);
+    display: inline;
+    text-align: center;
+    padding-top: 2rem;
+    border: 2px solid var(--clr-font);
+    transform: scale(0);
+    opacity: 0;
+    transition: none;
+    transform-origin: top right;
+  }
+  .nav__bar .navbar.active {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: 0.2s ease-out;
+  }
+  .nav__bar ul li {
+    padding-bottom: 1.5rem;
+  }
+  .nav__bar ul {
+    display: none;
+  }
+  .home .home__first {
+    padding-top: 0;
+  }
+  .home .home__first h2 {
+    font-size: 1.5em;
+  }
+  .home .home__first p {
+    font-size: 1em;
+  }
+  .home .home__second img {
+    width: 300px;
+    height: 300px;
+  }
+  .about .about__second h2 {
+    font-size: 1.4em;
+  }
+  .about__page .about__one h2,
+  .about__page .about__two h2,
+  .about__page .about__three h2,
+  .about__page .about__four h2,
+  .about__page .about__five h2,
+  .about__page .about__six h2 {
+    font-size: 1em;
+  }
+  .about .about__first img {
+    width: 300px;
+    height: 300px;
+  }
+  .book {
+    padding: 1rem 4rem;
+  }
+  .bottom .bottom__one h2,
+  .bottom .bottom__two h2,
+  .bottom .bottom__three h2,
+  .bottom .bottom__four h2 {
+    font-size: 1em;
+  }
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+}
+@media (max-width: 750px) {
+  .about__page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .doctor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .book {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .book .book__first img {
+    margin-left: 8rem;
+  }
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .about__first img {
+    margin-left: 4rem;
+  }
+  .service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  body {
+    overflow-x: hidden;
+  }
+  .home {
+    padding: 4rem 2rem;
+  }
+  .home .home__first p,
+  .about .about__second p {
+    width: 94%;
+  }
+  .service {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 2rem;
+  }
+  .about__page,
+  .about,
+  .doctor,
+  .book,
+  .bottom {
+    padding: 4rem 2rem;
+  }
+  .book .book__first img {
+    margin-left: 0;
+  }
+  .about__page {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .doctor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .book .book__second button {
+    margin: 1rem 10rem;
+  }
+}
