@@ -309,7 +309,6 @@ hr {
   text-align: center;
   font-size: 2em;
   padding: 2rem 0;
-  color: var(--clr-font);
 }
 .book .book__second input {
   display: block;
@@ -334,4 +333,34 @@ hr {
 .book .book__second button:hover {
   background: var(--clr-font);
   color: var(--clr-one);
+}
+/* --------------------------------------------- */
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem 8rem;
+  background: var(--clr-two);
+}
+.bottom .bottom__one h2,
+.bottom .bottom__two h2,
+.bottom .bottom__three h2,
+.bottom .bottom__four h2 {
+  padding-bottom: 1rem;
+}
+.bottom .bottom__one ul,
+.bottom .bottom__two ul,
+.bottom .bottom__three ul,
+.bottom .bottom__four ul {
+  list-style: none;
+}
+.bottom .bottom__one ul li a span,
+.bottom .bottom__two ul li a span,
+.bottom .bottom__three ul li a span,
+.bottom .bottom__four ul li a span {
+  color: var(--clr-text);
+  padding-left: 1rem;
+}
+footer p {
+  text-align: center;
+  background: var(--clr-two);
 }
